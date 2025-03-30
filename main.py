@@ -161,7 +161,7 @@ def recommend_attractions_collaborative(user_id, df, n=5):
 
 
 # MySQL Integration
-conn = pymysql.connect(host='localhost', user='root', password='nandha1510', database='tourism_db')
+conn = pymysql.connect(host='localhost', user='root', password='vijay45', database='tourism_db')
 cursor = conn.cursor()
 df = df[['TransactionId', 'UserId', 'VisitYear', 'VisitMonth', 'VisitMode_x', 'AttractionId', 'Rating',
          'ContenentId', 'RegionId', 'CountryId_x', 'CityId_x', 'AttractionCityId', 'AttractionTypeId', 
